@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <base href="/e-commerce" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="%PUBLIC_URL%/images/ars-favicon.png" />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/ars-favicon.png" />
+      <meta name="theme-color" content="#000000" />
+      <title>ARS - Web i mobilna aplikacija / Hakaton 2021.</title>
+      <meta name="description" content="Demo verzija ARS aplikacije za racunare i mobilne telefone.">
+      <meta name="author" content="Alfonso">
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Icons -->
+      <link href="vendor/icons/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+      <!-- Slick Slider -->
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css"/>
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css"/>
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet">
+      <link href="vendor/font/stylesheet.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="padding_bottom">
+         <!-- Tabs link -->
+         <ul class="nav nav-tabs bg-primary justify-content-center justify-content-between" id="myTab" role="tablist">
+            <li class="nav-item col text-center" role="presentation">
+               <a class="nav-link nav-cart py-3 text-muted active" id="shopping-tab" data-bs-toggle="tab" href="#shopping" role="tab" aria-controls="shopping" aria-selected="true">SHOPPING BAG (1)</a>
+            </li>
+            <li class="nav-item col text-center" role="presentation">
+               <a class="nav-link nav-cart py-3 text-muted" id="wishlist-tab" data-bs-toggle="tab" href="#wishlist" role="tab" aria-controls="wishlist" aria-selected="false">WISHLIST (1)</a>
+            </li>
+         </ul>
+         <!-- Shopping Content -->
+         <div class="tab-content" id="myTabContent">
+            <div class="tab-pane sb-cart fade show active" id="shopping" role="tabpanel" aria-labelledby="shopping-tab">
+               <p class="d-flex align-items-center border-bottom py-2 px-3 mb-0"><span class="mdi mdi-truck-fast-outline mdi-24px mr-3"></span><span class="small">FREE SHIPPING + FREE RETURNS & EXCHANGES</span></p>
+               <div class="p-3">
+                  <a href="#" class="d-flex mb-3 osahan-list">
+                     <div><img src="img/cart1.jpg" class="img-fluid"></div>
+                     <div class="ml-3 d-flex flex-column w-100">
+                        <p class="small text-dark fw-bold mb-2">PRIMEBLUE ULTRABOOST 20 SHOES</p>
+                        <p class="text-dark fw-bold">$180.00</p>
+                        <div class="d-flex align-items-center mb-2">
+                           <div class="border-right w-100">
+                              <select class="form-select form-select-sm border-0" aria-label=".form-select-lg example">
+                                 <option selected>Size</option>
+                                 <option value="1">8</option>
+                                 <option value="2">9</option>
+                                 <option value="3">10</option>
+                              </select>
+                           </div>
+                           <div class="w-100">
+                              <select class="form-select form-select-sm border-0" aria-label=".form-select-lg example">
+                                 <option selected>Qty - 1</option>
+                                 <option value="1">2</option>
+                                 <option value="2">3</option>
+                                 <option value="3">4</option>
+                              </select>
+                           </div>
+                        </div>
+                        <button class="btn btn-sm rounded-0 mt-auto border py-1 px-2 text-dark d-flex align-items-center mb-0" data-bs-toggle="modal" data-bs-target="#wish">Move to wishlist<span class="ml-auto mdi mdi-heart-outline mdi-18px"></span></button>
+                     </div>
+                  </a>
+                  <a href="#" class="d-flex mb-3 osahan-list">
+                     <div><img src="img/cart2.jpg" class="img-fluid"></div>
+                     <div class="ml-3 d-flex flex-column w-100">
+                        <p class="small text-dark fw-bold mb-2">PRIMEBLUE ULTRABOOST 20 SHOES</p>
+                        <p class="text-dark fw-bold">$180.00</p>
+                        <div class="d-flex align-items-center mb-2">
+                           <div class="border-right w-100">
+                              <select class="form-select form-select-sm border-0" aria-label=".form-select-lg example">
+                                 <option selected>Size</option>
+                                 <option value="1">8</option>
+                                 <option value="2">9</option>
+                                 <option value="3">10</option>
+                              </select>
+                           </div>
+                           <div class="w-100">
+                              <select class="form-select form-select-sm border-0" aria-label=".form-select-lg example">
+                                 <option selected>Qty - 1</option>
+                                 <option value="1">2</option>
+                                 <option value="2">3</option>
+                                 <option value="3">4</option>
+                              </select>
+                           </div>
+                        </div>
+                        <button class="btn btn-sm rounded-0 mt-auto border py-1 px-2 text-dark d-flex align-items-center mb-0" data-bs-toggle="modal" data-bs-target="#wish">Move to wishlist<span class="ml-auto mdi mdi-heart-outline mdi-18px"></span></button>
+                     </div>
+                  </a>
+               </div>
+               <div class="border-top p-3 mt-auto fixed-bottom bg-white checkout_bottom">
+                  <p class="d-flex align-items-center">TOTAL (excl. tax) <span class="fw-bold ml-auto">180.00</span></p>
+                  <a href="home-ars.html" class="btn bg-primary text-white rounded-0 btn-sm p-2 w-100 d-flex" data-bs-toggle="modal" data-bs-target="#chechkout">CHECKOUT<span class="mdi mdi-arrow-right ml-auto"></span></a>
+               </div>
+            </div>
+            <!-- Wishlist Content -->
+            <div class="tab-pane sw-cart fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
+               <div class="p-3">
+                  <a href="#" class="d-flex mb-3 osahan-list">
+                     <div><img src="img/cart1.jpg" class="img-fluid"></div>
+                     <div class="ml-3 d-flex flex-column w-100">
+                        <p class="small text-dark fw-bold mb-2">PRIMEBLUE ULTRABOOST 20 SHOES</p>
+                        <p class="text-dark fw-bold">$180.00</p>
+                        <div class="d-flex align-items-center mb-2">
+                           <div class="border-right w-100">
+                              <select class="form-select form-select-sm border-0" aria-label=".form-select-lg example">
+                                 <option selected>Size</option>
+                                 <option value="1">8</option>
+                                 <option value="2">9</option>
+                                 <option value="3">10</option>
+                              </select>
+                           </div>
+                           <div class="w-100">
+                              <select class="form-select form-select-sm border-0" aria-label=".form-select-lg example">
+                                 <option selected>Qty - 1</option>
+                                 <option value="1">2</option>
+                                 <option value="2">3</option>
+                                 <option value="3">4</option>
+                              </select>
+                           </div>
+                        </div>
+                        <button class="btn btn-sm rounded-0 mt-auto border py-1 px-2 text-dark d-flex align-items-center mb-0" data-bs-toggle="modal" data-bs-target="#bag">Move to shopping bag<span class="ml-auto mdi mdi-shopping-outline mdi-18px"></span></button>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer Fixed -->
+      <footer class="fixed-bottom bg-white p-3 border-top d-flex align-items-center justify-content-between">
+         <a href="home-ars.html" class="mdi mdi-home-minus-outline fs-3 text-muted"></a>
+         <a href="search.html" class="mdi mdi-magnify fs-3 text-muted"></a>
+         <a href="cart.html" class="mdi mdi-shopping-outline fs-1 text-dark"></a>
+         <a href="profile.html" class="mdi mdi-account-outline fs-3 text-muted"></a>
+      </footer>
+      <!-- Added to wishlist -->
+      <div class="modal fade" id="wish" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+               <div class="modal-header d-none">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel">ADDED TO CART</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-3">
+                  <h5 class="fw-bold mb-2">Move to wishlist</h5>
+                  <p>Are you sure you want to move Primeblue Ultraboost 20 Shoes to wishlist</p>
+               </div>
+               <div class="modal-footer justify-content-start p-0">
+                  <a href="#" class="text-left btn bg-white btn-sm rounded-0 text-center p-3 m-0 w-50" data-bs-dismiss="modal">NO</a>
+                  <a href="wishlist.html" class="text-left btn bg-primary btn-sm text-white rounded-0 text-center p-3 m-0 w-50">YES</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Added to bag -->
+      <div class="modal fade" id="bag" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+               <div class="modal-header d-none">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel">ADDED TO CART</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-3">
+                  <h5 class="fw-bold mb-2">Move to shopping bag</h5>
+                  <p>Are you sure you want to move Primeblue Ultraboost 20 Shoes to shopping bag</p>
+               </div>
+               <div class="modal-footer justify-content-start p-0">
+                  <a href="#" class="text-left btn bg-white btn-sm rounded-0 text-center p-3 m-0 w-50" data-bs-dismiss="modal">NO</a>
+                  <a href="cart.html" class="text-left btn bg-primary btn-sm text-white rounded-0 text-center p-3 m-0 w-50">YES</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Chechkout Process -->
+      <div class="modal fade" id="chechkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel">CHECKOUT</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body px-0 overflow-auto">
+                  <div class="d-flex align-items-center px-3 pb-3">
+                     <img src="img/shoe1.1.png" class="img-fluid check_img border p-1 rounded mr-3">
+                     <div class="small fw-bold">
+                        <p class="fw-bold mb-0">YEEZY BOOST 700 MNVN ADULTS</p>
+                        <p class="small mb-0 text-muted">MENS / BLACK / 9 / $220.00</p>
+                     </div>
+                  </div>
+                  <div class="item_details small">
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">DELIVERY METHOD</span><span class="ml-auto text-right mr-4">Delivery</span></p>
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">ADDRESS</span><a href="#" class="ml-auto text-right d-flex align-items-center text-dark" data-bs-toggle="modal" data-bs-target="#address">Gurdeep Osahan<br>Near Tower, Bangluru, India<i class="mdi mdi-chevron-right fs-6 ml-2"></i></a></p>
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">DELIVERY OPTIONS</span><span class="ml-auto text-right mr-4">Fed Ex - Shipping<br>4-7 Day Delivery</span></p>
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">PAYMENT</span><a href="#" class="text-dark ml-auto text-right d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#payment"><span class="border p-1"><i class="mdi mdi-apple"></i>Pay</span><i class="mdi mdi-chevron-right fs-6 ml-2"></i></a></p>
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">BILLING ADDRESS</span><a href="#" class="ml-auto text-right text-dark d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#address">Same as shipping address<i class="mdi mdi-chevron-right fs-6 ml-2"></i></a></p>
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">PROMO CODE</span><a href="#" class="ml-auto text-right text-dark d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#promo">SHOE50<i class="mdi mdi-chevron-right fs-6 ml-2"></i></a></p>
+                     <p class="border-top p-3 d-flex align-items-center mb-0"><span class="text-muted">TOTAL</span><a href="#" class="ml-auto text-right text-dark d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#total">$196.65<i class="mdi mdi-chevron-right fs-6 ml-2"></i></a></p>
+                     <div class="px-3 fw-bold small border-top">
+                        <p class="pt-3 mb-1">By placing an order you agreeto our</p>
+                        <a href="#" class="text-dark text-decoration-underline" data-bs-toggle="modal" data-bs-target="#terms">Terms And Conditions</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <div class="d-grid w-100 m-0">
+                     <a href="thanku.html" class="btn bg-primary text-white rounded-0 py-2 px-3 fs-5">Check out with<span class="mdi mdi-apple ml-1"></span>Pay</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Address -->
+      <div class="modal fade" id="address" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel"><a href="#" class="mdi mdi-chevron-left mr-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></a>ADD NEW ADDRESS</h6>
+               </div>
+               <div class="modal-body">
+                  <div class="d-flex align-items-center">
+                     <a href="#" data-bs-dismiss="modal" aria-label="Close" class="text-dark">
+                     <span>Gurdeep Osahan<br>Near Tower<br>Bangluru, Karnataka<br>India, 141013</span>
+                     <a href="#" class="text-dark ml-auto mdi mdi-pencil-outline mdi-18px" data-bs-toggle="modal" data-bs-target="#addaddress"></a>
+                     </a>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-start border-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="#" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3" data-bs-toggle="modal" data-bs-target="#addaddress">ADD NEW ADDRESS</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Add Address -->
+      <div class="modal fade" id="addaddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel"><a href="#" class="mdi mdi-chevron-left mr-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></a>ADD NEW ADDRESS</h6>
+               </div>
+               <div class="modal-body">
+                  <form>
+                     <div class="form-floating mb-3 d-flex align-items-end border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="Gurdeep" placeholder="first">
+                        <label for="floatingInput" class="pl-1 fw-bold">NAME</label>
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="Osahan" placeholder="last">
+                     </div>
+                     <div class="form-floating mb-3 border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="1226 Univrsity Dr" placeholder="address1">
+                        <label for="floatingInput" class="pl-1 fw-bold">ADDRESS</label>
+                     </div>
+                     <div class="form-floating mb-3 border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" placeholder="address2">
+                        <label for="floatingInput" class="pl-1 text-muted">ADDRESS LINE 2</label>
+                     </div>
+                     <div class="form-floating mb-3 border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="Bangluru" placeholder="city">
+                        <label for="floatingInput" class="pl-1 fw-bold">TOWN / CITY</label>
+                     </div>
+                     <div class="form-floating mb-3 border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="Karnataka" placeholder="state">
+                        <label for="floatingInput" class="pl-1 fw-bold">STATE</label>
+                     </div>
+                     <div class="form-floating mb-3 border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="141013" placeholder="pincode">
+                        <label for="floatingInput" class="pl-1 fw-bold">ZIP CODE</label>
+                     </div>
+                     <div class="form-floating mb-3 border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" placeholder="phone">
+                        <label for="floatingInput" class="pl-1 text-muted">PHONE</label>
+                     </div>
+                     <div class="form-floating mb-3 d-flex align-items-center border-bottom">
+                        <input type="text" class="form-control border-0 pl-1" id="floatingInput" value="India" placeholder="country">
+                        <label for="floatingInput" class="pl-1 fw-bold">COUNTRY</label>
+                        <span class="mdi mdi-clipboard-text-outline mdi-18px mr-2"></span>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer justify-content-start border-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="#" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3" data-bs-dismiss="modal" aria-label="Close">SAVE ADDRESS</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Payment -->
+      <div class="modal fade" id="payment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel"><a href="#" class="mdi mdi-chevron-left mr-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></a>PAYMENT</h6>
+               </div>
+               <div class="modal-body p-3">
+                  <div class="border-bottom">
+                     <input type="radio" name="payment" class="btn-check" id="btn-apple" autocomplete="off" checked>
+                     <label class="btn btn_pay w-100 text-left rounded-0 p-3" for="btn-apple"><span class="border p-1"><i class="mdi mdi-apple"></i>Pay</span></label>
+                  </div>
+                  <div class="border-bottom">
+                     <input type="radio" name="payment" class="btn-check" id="btn-paypal" autocomplete="off">
+                     <label class="btn btn_pay w-100 text-left rounded-0 p-3" for="btn-paypal">PayPal</label>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-start border-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="cart.html" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">CONTINUE<span class="mdi mdi-arrow-right mdi-18px ml-auto"></span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Promo -->
+      <div class="modal fade" id="promo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel"><a href="#" class="mdi mdi-chevron-left mr-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></a>APPLY PROMO CODE</h6>
+               </div>
+               <div class="modal-body">
+                  <div class="form-floating">
+                     <input type="email" value="ASK5050" class="form-control" id="floatingInput" placeholder="name@example.com">
+                     <label for="floatingInput" class="fw-bold small">PROMO CODE</label>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-start border-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="cart.html" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">APPLY<span class="mdi mdi-arrow-right mdi-18px ml-auto"></span></a>
+                     <span class="text-muted small mt-1">Some items may be excluded from same promo codes check the promo T and Cs</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Total -->
+      <div class="modal fade" id="total" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel"><a href="#" class="mdi mdi-chevron-left mr-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></a>TOTAL</h6>
+               </div>
+               <div class="modal-body">
+                  <p class="d-flex align-items-center small"><span class="text-muted">Subtotal</span><span class="ml-auto">$180.00</span></p>
+                  <p class="d-flex align-items-center small"><span class="text-muted">Shipping</span><span class="ml-auto">$0.00</span></p>
+                  <p class="d-flex align-items-center small"><span class="text-muted">Promotions</span><span class="ml-auto">$0.00</span></p>
+                  <p class="d-flex align-items-center small"><span class="text-muted">Tax</span><span class="ml-auto">$16.65</span></p>
+               </div>
+               <div class="modal-footer d-block">
+                  <p class="d-flex align-items-center fw-bold"><span>Total</span><span class="ml-auto">$196.65</span></p>
+                  <p class="d-flex align-items-center small"><span class="text-muted">Memberhip Points</span><span class="ml-auto">+1967</span></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Terms & Conditions -->
+      <div class="modal fade" id="terms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel">Terms & Conditions</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body bg-white text_short text-dark">
+                  <p class="mb-0 fw-bold">1. Dukkan App Terms & Conditions of Use</p>
+                  <p class="fw-bold">2. Dukkan Creators Club Terms & Conditions</p>
+                  <h6 class="fw-bold">Dukkan app Terms and Conditions of Use</h6>
+                  <p class="small">Last Updated: 09 Dec 2020</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="fw-bold">THESE TERMS INCLUDEA AN AGREEMENT SUBMIT CLAIMS EXCLUSIVELY TO INDIVIDUAL (NON-CLASS) ARBITRATION. SEE BELOW.</p>
+                  <p class="fw-bold ml-0">1. Copyright and Owenship</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p class="fw-bold ml-0">2. Products, Content and Specification</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p class="fw-bold ml-0">3. Shipping Limitations</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <p class="fw-bold ml-0">4. Accuracy of Information</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+               </div>
+               <div class="modal-footer d-none">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <!-- slick Slider JS-->
+      <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+      <!-- Bootstrap Bundle -->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Osahan js -->
+      <script src="js/osahan.js"></script>
+   </body>
+</html>
