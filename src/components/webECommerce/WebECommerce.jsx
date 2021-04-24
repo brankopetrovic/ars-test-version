@@ -5,10 +5,7 @@ import React, { Component } from 'react';
 import * as config from '../../config';
 
 // Components
-import Navigation from '../navigation/Navigation';
-import VideoPlayer from '../videoPlayer/VideoPlayer';
-import ProductList from '../productList/ProductList';
-
+// import Navigation from '../navigation/Navigation';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
 import ProductList from '../productList/ProductList';
 // import LiveExperts from '../liveExperts/LiveExperts';
