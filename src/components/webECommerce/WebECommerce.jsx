@@ -8,7 +8,10 @@ import * as config from '../../config';
 import Navigation from '../navigation/Navigation';
 import VideoPlayer from '../videoPlayer/VideoPlayer';
 import ProductList from '../productList/ProductList';
-import LiveExperts from '../liveExperts/LiveExperts';
+
+import VideoPlayer from '../videoPlayer/VideoPlayer';
+import ProductList from '../productList/ProductList';
+// import LiveExperts from '../liveExperts/LiveExperts';
 
 // Styles
 import './WebECommerce.css';
