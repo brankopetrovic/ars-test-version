@@ -1,0 +1,91 @@
+/* Default */
+
+body {
+    font-family: 'Averta';
+    font-size: 14px;
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Footer */
+footer.p-3 {
+    padding: 0px !important;
+}
+
+footer.p-3 a {
+    height: 70px;
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+
+.fs-3 {
+    font-size: calc(1.3rem + .6vw)!important;
+}
+
+
+/* Material Design Icons - ARS External code */
+
+@font-face {
+    font-family: "Material Design Icons";
+    src: url("fonts/materialdesignicons-webfont.eot?v=5.8.55");
+    src: url("fonts/materialdesignicons-webfont.eot?#iefix&v=5.8.55") format("embedded-opentype"), url("fonts/materialdesignicons-webfont.woff2?v=5.8.55") format("woff2"), url("fonts/materialdesignicons-webfont.woff?v=5.8.55") format("woff"), url("fonts/materialdesignicons-webfont.ttf?v=5.8.55") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .mdi:before,
+  .mdi-set {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+
+  .mdi-home-minus::before {
+    content: "\F0974";
+  }
+  
+  .mdi-home-minus-outline::before {
+    content: "\F13D5";
+  }
+  
+  .mdi-magnify::before {
+    content: "\F0349";
+  }
+
+  .mdi-shopping-outline::before {
+    content: "\F11D5";
+  }
+
+  .mdi-account-outline::before {
+    content: "\F0013";
+  }
+  
