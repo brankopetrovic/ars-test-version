@@ -21,7 +21,7 @@ const Navigation = () => {
   return (
     <div className="navigation grid grid--3">
       <div className="pd-l-2 fl-a-center">
-        <img src={logo} alt="logo" height="1em" />
+        <img src={logo} alt="logo" height="12px" />
       </div>
       <div className="fl fl-a-center fl-j-center">
         <input className="nav-search__input rounded full-width pd-x-1" type="search" onChange={handleSearch} placeholder="Search products" name="search" autoComplete="off" value={search} />
