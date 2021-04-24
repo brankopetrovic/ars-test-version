@@ -48,18 +48,6 @@ class WebECommerce extends Component {
               setModal={this.setModal}
               showModal={this.state.showModal}
             />
-            <VideoPlayer setMetadataId={this.setCurrentProductId} videoStream={config.DEFAULT_VIDEO_STREAM} />
-            <ProductList
-              currentProductId={this.state.currentProductId}
-              setModal={this.setModal}
-              showModal={this.state.showModal}
-            />
-            <VideoPlayer setMetadataId={this.setCurrentProductId} videoStream={config.DEFAULT_VIDEO_STREAM} />
-            <ProductList
-              currentProductId={this.state.currentProductId}
-              setModal={this.setModal}
-              showModal={this.state.showModal}
-            />
           </div>
         </div>
       </div>
