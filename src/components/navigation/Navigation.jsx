@@ -7,7 +7,7 @@ import React,  {useState } from 'react';
 import './Navigation.css';
 
 // Assets
-import logo from '../../assets/ars-logo.svg';
+import logo from '../../assets/ars-icon-logo.svg';
 import user_logo from '../../assets/profile-pic@2x.png';
 import shopping_cart from '../../assets/shopping-icon.svg';
 
