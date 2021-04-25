@@ -134,7 +134,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color-text-base);
-  background: var(--color-bg-base);
+  background: #fff;
 	line-height: 1.5;
 }
 
