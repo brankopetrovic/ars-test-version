@@ -1,0 +1,418 @@
+/*
+Template Name: Dukkan - eCommerce Mobile Template 
+Author: Askbootstrap
+Author URI: https://themeforest.net/user/askbootstrap
+Version: 1.0
+*/
+
+
+/*
+- Font css
+- Padding bottom
+- Font style
+- Background color
+- Startup Pages
+- Homepage
+- Form check
+- Slick slider
+- Tabs
+- Accordian
+- Modal bottom
+- Favourite Button
+- Cart page
+- Thanku page
+- Profile
+- Footer
+*/
+
+
+/*Font css*/
+
+body {
+    font-family: 'Averta';
+    font-size: 14px;
+}
+
+
+/* Padding bottom */
+
+.padding_bottom {
+    padding-bottom: 70px;
+}
+
+/* Popup */
+.modal-dialog {
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.modal-content {
+    border: none;
+    height: 100vh;
+}
+
+.modal-header {
+    border-radius: 0px;
+}
+
+
+/* Font style */
+
+.text_short {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.border-btn p.h6.mb-0 {
+    font-size: 14px;
+    margin: 0 0 3px 0 !important;
+}
+.border-btn p.small {
+    font-size: 12px;
+}
+.border-btn {
+    border-color: #dee2e6 !important;
+}
+.form-control {
+    box-shadow: none !important;
+}
+label.pl-0 {
+    left: -3px;
+}
+.c-f .img-fluid {
+    height: 18px;
+    width: 18px;
+    border-radius: 2px;
+    vertical-align: sub;
+}
+span.ml-auto.form-check.form-switch {
+    margin: 5px 0px 7px 0;
+    height: auto;
+    min-height: auto;
+}
+
+/* Background color */
+
+.bg-lgt {
+    background-color: #fff;
+}
+
+.bg-primary {
+    background-color: #000 !important;
+}
+
+.bg-outline-primary {
+    border-color: #000;
+}
+
+.bg-grey {
+    background-color: #ECEDED;
+}
+
+
+/* Startup Pages */
+
+.index_loop {
+    position: relative;
+    animation: mymove 0.5s;
+  animation-iteration-count: 9999;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 20px;}
+}
+
+.excla_icon {
+    padding: 0px 4px;
+}
+
+
+/* Homepage */
+
+.mt-n5 {
+    margin-top: -30px;
+}
+
+.z-nindex {
+    z-index: 9;
+}
+
+.register_top {
+    right: 0;
+}
+.filter-tag {
+    font-size: 11px;
+    margin: 0px 2px 6px 0px;
+    display: inline-block;
+    height: 23px;
+    line-height: 10px;
+    padding: 4px 6px !important;
+}
+
+.filter-tag a {
+    font-size: 14px !important;
+}
+
+.osahan-list-item-page .img-fluid {
+    width: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+    background-color: #f8f8f8;
+    /*padding: 26px; */
+    height: 240px;
+}
+
+.osahan-list-item-page p.text-dark.px-2.pt-3.mb-1 {
+    font-weight: 600;
+}
+
+.homepage-list-slider .img-fluid {
+    padding: 26px;
+}
+
+/* Form check */
+
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #000;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.btn-check:active+.btn_size, .btn-check:checked+.btn_size, .btn_size.active, .btn_size.dropdown-toggle.show, .btn_size:active {
+    color: #000 !important;
+    border-bottom: 2px solid #000 !important;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none;
+}
+
+.btn-check:active+.btn-fav, .btn-check:checked+.btn-fav, .btn-fav.active, .btn-fav:active, .show>.btn-fav.dropdown-toggle { 
+    color: #fff;
+    border-color: none;
+}
+
+.btn-check:active+.btn_pay, .btn-check:checked+.btn_pay, .btn_pay.active, .btn_pay:active, .show>.btn_pay.dropdown-toggle { 
+    color: #000;
+    border: 1px solid #000;
+    border-color: none;
+}
+
+
+/* Slick slider */
+.slick-track {
+    display: flex;
+}
+
+.osahan-verticle-slider .slick-track {
+    display: inline-block;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.osahan-verticle-slider .slick-dots {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    height: 40px;
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.osahan-line-dot ul.slick-dots {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    left: 0;
+    margin: auto;
+}
+
+.osahan-line-dot ul.slick-dots li {
+    padding: 0px;
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
+}
+
+.osahan-line-dot ul.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+.osahan-line-dot ul.slick-dots li button:after {
+    width:10px;
+}
+
+.osahan-line-dot ul.slick-dots li button:before {
+    width: 8px;
+    height: 8px;
+    top: 0;
+    bottom: 0px;
+    line-height: 9px;
+    font-size: 6px;
+    padding: 0 0 0 1px;
+}
+
+.osahan-verticle-slider {
+    height: 350px;
+}
+
+.osahan-verticle-slider div {
+    height: 350px !important;
+}
+
+.osahan-verticle-slider .img_item {
+    height: 350px;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tabs */
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000 !important;
+    border: 1px solid #000 !important;
+}
+
+.nav-tabs .nav-item.show .nav-cart, .nav-tabs .nav-cart.active {    
+    color: #fff !important;
+    background-color: #000;
+    border-bottom: 3px solid #fff !important;
+
+}
+
+.nav-tabs .nav-cart:focus, .nav-tabs .nav-cart:hover {
+    border: none;
+    outline: none;
+}
+
+.nav-tabs .nav-item.show .nav-categorie, .nav-tabs .nav-categorie.active {
+    color: #000 !important;
+    font-weight: bold;
+    border: none !important;
+    border-bottom: 2px solid #000 !important;
+}
+
+.nav-tabs .nav-categorie:focus, .nav-tabs .nav-categorie:hover {
+    border: none;
+    outline: none;
+}
+
+.nav-tabs .nav-categorie {
+    border: none;
+}
+
+
+/* Accordian */
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../img/down.svg");
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+.osahan-row-list img {
+    height: 60px;
+    width: 60px;
+    object-fit: scale-down;
+}
+
+.osahan-row-list span {
+    width: 100px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Modal bottom */
+
+.modal-dialog.modal-login {
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: 0;
+}
+
+
+/* Favourite Button */
+
+.heart_icon {
+    top: 17px;
+    right: 17px;
+    z-index: 9;
+    line-height: 10px;
+}
+
+
+/* Cart page */
+
+.checkout_bottom {
+    margin-bottom: 70px;
+}
+
+.check_img {
+    width: 50px;
+}
+
+.sb-cart {
+    overflow: auto;
+    height: calc(100vh - 236px);
+}
+
+.sw-cart {
+    overflow: auto;
+    height: calc(100vh - 127px);
+}
+
+/* Thanku page */
+
+.height_thank {
+    height: 80vh !important;
+}
+
+/* Profile */
+.osahan-orders-accordion .accordion-button::after {
+    position: absolute;
+    right: 15px;
+}
+
+/* Footer */
+footer.p-3 {
+    padding: 0px !important;
+}
+
+footer.p-3 a {
+    height: 70px;
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Custom */
