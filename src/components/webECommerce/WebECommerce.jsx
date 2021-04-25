@@ -41,7 +41,7 @@ class WebECommerce extends Component {
     return (
       <div className={`web-ecommerce-container full-width full-height ${details}`} onClick={this.handleECommerceOnClick}>
         <div className="web-ecommerce-content pd-2 grid fl fl-j-center">
-          <div className="video-product-content">
+          <div className="video-product-content" style="height: 400px; width: 400px;">
             <VideoPlayer setMetadataId={this.setCurrentProductId} videoStream={config.DEFAULT_VIDEO_STREAM} />
           </div>
         </div>
