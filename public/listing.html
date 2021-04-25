@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Demo verzija ARS aplikacije za racunare i mobilne telefone.">
+      <meta name="author" content="Alfonso tim">
+      <link rel="icon" href="%PUBLIC_URL%/images/ars-favicon.png" />
+      <link rel="apple-touch-icon" href="%PUBLIC_URL%/ars-favicon.png" />
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      <title>ARS - Web i mobilna aplikacija / Hakaton 2021.</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Icons -->
+      <link href="vendor/icons/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+      <!-- Slick Slider -->
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css"/>
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css"/>
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet">
+      <link href="vendor/font/stylesheet.css" rel="stylesheet">
+   </head>
+   <body>    
+   <!-- Profile -->
+   <header class="profile d-flex align-items-start p-3">
+      <img src="img/logo-acme.png" class="rounded-circle mr-3">
+      <div>
+         <span class="text-muted text_short">NAMJEŠTAJ</span>
+         <h4 class="mb-3"><span class="fw-bold">ACME Enterijer</span></h4>
+         <p class="small">Namještaj vrhunskog kvaliteta izrade i dizajna brojnih svjetskih i domaćih brendova.</p>
+      </div>
+   </header>
+   <!-- Profile tabs -->
+   <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="col-4 nav-item" role="presentation">
+         <a class="nav-link p-3 nav-categorie text-center text-muted active" id="account-tab" data-bs-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="true">ARTIKLI</a>
+      </li>
+      <li class="col-4 nav-item" role="presentation">
+         <a class="nav-link p-3 nav-categorie text-center text-muted" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false">VIDEO</a>
+      </li>
+      <li class="col-4 nav-item" role="presentation">
+         <a class="nav-link p-3 nav-categorie text-center text-muted" id="settings-tab" data-bs-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">TAGOVANO</a>
+      </li>
+   </ul>
+
+   <!-- Listing Products -->
+   <div class="py-3">
+      <p class="px-3 d-flex align-items-center">6 ARTIKALA <a href="#" class="mdi mdi-filter fs-5 ml-auto text-dark" data-bs-toggle="modal" data-bs-target="#filters"></a></p>
+      <div class="row mx-0 px-1">
+         <div class="col-6 small pr-1 pl-1 position-relative">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#detail" class="osahan-list-item-page">
+               <span class="position-absolute heart_icon mdi mdi-heart mdi-18px text-dark"></span>
+               <img src="img/list1.png" class="img-fluid">
+               <p class="text-dark px-2 pt-3 mb-1">STOLICA FRESH</p>
+               <p class="text-dark px-2 mb-4">75,99 KM</p>
+            </a>
+         </div>
+         <div class="col-6 small pr-1 pl-1 position-relative">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#detail" class="osahan-list-item-page">
+               <span class="position-absolute heart_icon mdi mdi-heart mdi-18px text-dark"></span>
+               <img src="img/list2.png" class="img-fluid">
+               <p class="text-dark px-2 pt-3 mb-1">STO MAGIC</p>
+               <p class="text-dark px-2 mb-4">1329,99 KM</p>
+            </a>
+         </div>
+         <div class="col-6 small pr-1 pl-1 position-relative">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#detail" class="osahan-list-item-page">
+               <span class="position-absolute heart_icon mdi mdi-heart-outline mdi-18px text-dark"></span>
+               <img src="img/list3.png" class="img-fluid">
+               <p class="text-dark px-2 pt-3 mb-1">STOLICA DARK</p>
+               <p class="text-dark px-2 mb-4">75,99 KM</p>
+            </a>
+         </div>
+         <div class="col-6 small pr-1 pl-1 position-relative">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#detail" class="osahan-list-item-page">
+               <span class="position-absolute heart_icon mdi mdi-heart-outline mdi-18px text-dark"></span>
+               <img src="img/list4.png" class="img-fluid">
+               <p class="text-dark px-2 pt-3 mb-1">SOFA GREEN</p>
+               <p class="text-dark px-2 mb-4">75,99 KM</p>
+            </a>
+         </div>
+         <div class="col-6 small pr-1 pl-1 position-relative">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#detail" class="osahan-list-item-page">
+               <span class="position-absolute heart_icon mdi mdi-heart mdi-18px text-dark"></span>
+               <img src="img/list5.png" class="img-fluid">
+               <p class="text-dark px-2 pt-3 mb-1">PRIMEBLUE ULTRABOOST 20 SHOES</p>
+               <p class="text-dark px-2 mb-4">75,99 KM</p>
+            </a>
+         </div>
+         <div class="col-6 small pr-1 pl-1 position-relative">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#detail" class="osahan-list-item-page">
+               <span class="position-absolute heart_icon mdi mdi-heart mdi-18px text-dark"></span>
+               <img src="img/list6.png" class="img-fluid">
+               <p class="text-dark px-2 pt-3 mb-1">PRIMEBLUE ULTRABOOST 20 SHOES</p>
+               <p class="text-dark px-2 mb-4">75,99 KM</p>
+            </a>
+         </div>
+   </div>
+   
+    <!-- Footer Fixed -->
+    <footer class="fixed-bottom bg-white p-3 border-top d-flex align-items-center justify-content-between">
+      <a href="index.html" class="mdi mdi-home-minus-outline fs-3 text-muted"></a>
+      <a href="#" class="mdi mdi-magnify fs-3 text-muted"></a>
+      <a href="#" class="mdi mdi-shopping-outline fs-3 text-muted"></a>
+      <a href="#" class="mdi mdi-account-outline fs-3 text-muted"></a>
+   </footer>
+
+      <!-- Detail Modal -->
+      <div class="modal fade" id="detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog m-0 modal-dialog-scrollable">
+            <div class="modal-content border-0 rounded-0">
+               <!-- <div class="modal-header bg-primary rounded-0 flex-column align-items-start">
+                  </div> -->
+               <div class="modal-body p-0">
+                  <button type="button" class="position-absolute heart_icon btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="detailverticle_slider osahan-verticle-slider bg-lgt"> 
+                     <div class="img_item p-5">
+                        <iframe id="17e44466-9be6-4132-812c-340ce3348eda" src="https://www.vectary.com/viewer/v1/?model=17e44466-9be6-4132-812c-340ce3348eda&env=studio3" frameborder="0" width="80%" height="300"></iframe>
+                     </div>
+                  </div>
+                  <div class="p-3 border-bottom">
+                     <h6 class="fw-bold mb-1">STO MAGIC</h6>
+                     <p class="small mb-0 fw-bold">1329,99 KM</p>
+                  </div>
+                 
+                  <div class="p-3">
+                     <p class="mb-3">SKolekcija za klijente istančanog ukusa, čiji su izbor elegancija ravnih linija.
+                        Završna obrada, kao i konstruktivni dijelovi elemenata dizajnirani su sa ciljem da se proizvede namještaj za vrhunske enterijere.</p>
+                     <div class="d-grid gap-3 mb-3">
+                        <button type="submit" class="btn bg-outline-primary text-left rounded-0 btn-sm py-2 px-3 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login">DODAJ U KORPU<span class="mdi mdi-shopping mdi-18px ml-auto"></span></button>
+                        <a href="cart.html" class="btn bg-primary text-white text-left rounded-0 btn-sm py-2 px-3 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login">KUPI ODMAH<span class="mdi mdi-arrow-right mdi-18px ml-auto"></span></a>
+                     </div>
+                  </div>
+                  <div class="d-flex align-items-center border-top border-bottom">
+                     <span data-bs-toggle="modal" data-bs-target="#osahanpop" class="border-right p-3"><a href="#" class="mdi mdi-import mdi-36px text-dark"></a></span>
+                     <span data-bs-toggle="modal" data-bs-target="#osahanpop" class="d-flex align-items-center"><span class="mdi mdi-keyboard-return mdi-18px p-3 mr-1"></span> BESPLATAN POVRAT U ROKU 7 DANA</span>
+                  </div>
+                  <p class="p-3 text-muted mb-0">Iskustva korisnika</p>
+                  <div class="modal-footer d-none">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                     <button type="button" class="btn btn-primary">Sacuvaj</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Added to cart -->
+      <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel">DODANO U KORPU</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body p-0">
+                  <div class="p-3">
+                     <div class="d-flex mb-3 osahan-list align-items-center">
+                        <img src="img/list1.png" class="img-fluid w-25 border rounded p-3">
+                        <div class="ml-3 d-flex flex-column w-100">
+                           <h6 class="fw-bold mb-1">STO MAGIC</h6>
+                           <p class="small mb-0 fw-bold">1329,99 KM</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-start border-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="cart.html" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3 d-flex align-items-center">VIEW CART<span class="mdi mdi-arrow-right mdi-18px ml-auto"></span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Filters -->
+      <div class="modal fade" id="filters" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <p class="modal-title" id="exampleModalLabel"><span class="h6 fw-bold">REFINE RESULTS</span><br><span class="small">56 Items</span></p>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body overflow-auto">
+                  <div class="filters_apply mb-1">
+                     <span class="border p-1 small  filter-tag">Customer Top Rated <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">Men <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">Black <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">White <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">Red <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">Green <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">Blue <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                     <span class="border p-1 small  filter-tag">Shoes <a href="#" class="ml-2 fs-6 text-muted">x</a></span>
+                  </div>
+                  <p><a href="#" class="text-dark text-decoration-underline fw-bold small">CLEAR ALL</a></p>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small border-bottom py-3" data-bs-toggle="modal" data-bs-target="#sort">SORT BY<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small border-bottom py-3" data-bs-toggle="modal" data-bs-target="#sort">GENDER<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small border-bottom py-3" data-bs-toggle="modal" data-bs-target="#sort">CATEGORY<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small border-bottom py-3" data-bs-toggle="modal" data-bs-target="#sort">PRODUCT TYPE<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small border-bottom py-3" data-bs-toggle="modal" data-bs-target="#sort">SPORT<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small border-bottom py-3" data-bs-toggle="modal" data-bs-target="#sort">SIZE<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+                  <a href="#" class="text-dark d-flex align-items-center text-muted small py-3" data-bs-toggle="modal" data-bs-target="#sort">SIZE RANGES<span class="mdi mdi-chevron-right mdi-18px ml-auto"></span></a>
+               </div>
+               <div class="modal-footer justify-content-start">
+                  <div class="d-grid w-100 m-0">
+                     <a href="cart.html" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">VEIW ITEMS<span class="mdi mdi-arrow-right mdi-18px ml-auto"></span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- SORT BY -->
+      <div class="modal fade" id="sort" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header">
+                  <h6 class="modal-title fw-bold" id="exampleModalLabel"><a href="#" class="mdi mdi-chevron-left mr-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></a>SORT BY</h6>
+               </div>
+               <div class="modal-body">
+                  <div class="border-bottom">
+                     <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                     <label class="btn py-3 px-0 btn-sm text-muted" for="option1">Price (low/high)</label>
+                  </div>
+                  <div class="border-bottom">
+                     <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                     <label class="btn py-3 px-0 btn-sm text-muted" for="option2">Newest first</label>
+                  </div>
+                  <div class="border-bottom">
+                     <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                     <label class="btn py-3 px-0 btn-sm text-muted" for="option3">Top Sellers</label>
+                  </div>
+                  <div class="border-bottom">
+                     <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                     <label class="btn py-3 px-0 btn-sm text-muted" for="option4">Price (high/low)</label>
+                  </div>
+                  <div class="d-flex align-items-center">
+                     <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off" checked>
+                     <label class="btn py-3 px-0 btn-sm text-muted" for="option5">Customers Top Rated</label>
+                     <span class="mdi mdi-check mdi-18px ml-auto"></span>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-start border-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="cart.html" class="btn bg-primary btn-sm text-white text-left rounded-0 py-2 px-3 d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">VIEW ITEMS<span class="mdi mdi-arrow-right mdi-18px ml-auto"></span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="osahanpop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-login m-0 w-100">
+            <div class="modal-content rounded-0">
+               <div class="modal-header d-none">
+               </div>
+               <div class="modal-body p-4">
+                  <div class="d-flex mb-3">
+                     <div>
+                        <h6 class="modal-title fw-bold mb-3 d-flex align-items-center" id="exampleModalLabel">BESPLAAN POVRAT <button type="button" class="btn-close ml-auto" data-bs-dismiss="modal" aria-label="Close"></button></h6>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <ul>
+                           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                           <li>Aliquam tincidunt mauris eu risus.</li>
+                           <li>Vestibulum auctor dapibus neque.</li>
+                        </ul>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal-footer px-4 pb-4 border-0 pt-0">
+                  <div class="d-grid w-100 m-0">
+                     <a href="#" data-bs-dismiss="modal" aria-label="Close" class="btn bg-primary btn-sm text-white text-center rounded-0 py-2 px-3 d-flex align-items-center justify-content-center">Zatvori</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <!-- slick Slider JS-->
+      <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+      <!-- Bootstrap Bundle -->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Osahan js -->
+      <script src="js/osahan.js"></script>
+   </body>
+</html>
